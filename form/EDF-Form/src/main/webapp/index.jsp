@@ -109,9 +109,9 @@
                 <input type="radio" id="masters" name="collegeDegreeType" value="masters">
                 <label for="masters">Master's</label>
                 <input type="radio" id="bachelors" name="collegeDegreeType" value="bachelors">
-                <label for="bachelors">Bachelors</label>
+                <label for="bachelors">Bachelor's</label>
                 <input type="radio" id="associates" name="collegeDegreeType" value="associates">
-                <label for="associates">Associates</label>
+                <label for="associates">Associate's</label>
             </div>
             <div>
                 <div>
@@ -195,6 +195,7 @@
 
         <div>
             <label for="studentPurpose">4. Purpose (Why are you taking this course or attending this conference?)</label>
+            <br>
             <textarea id="studentPurpose" name="studentPurpose" rows="4" cols="100"></textarea>
         </div>
 
@@ -202,6 +203,7 @@
             <label for="studentCollegeBenefit">5. Benefit to the College (How will this course or conference aid you in your job or
                 future
                 professional position?)</label>
+            <br>
             <textarea id="studentCollegeBenefit" name="studentCollegeBenefit" rows="4" cols="100"></textarea>
         </div>
 
@@ -216,7 +218,7 @@
                 <input type="date" id="studentSignDate" name="studentSignDate">
             </div>
         </div>
-
+		<br>
         <fieldset>
             <legend>Supervisor Approval:</legend>
             <p>
@@ -253,15 +255,15 @@
         </fieldset>
 
         <ul>
-            <li>This form must be completed and submitted within the fiscal year in which the course/
-                conference/workshop began.</li>
+            <li>This form must be completed and submitted within the fiscal year in which the
+            	course/conference/workshop began.</li>
             <li>To expedite processing and avoid delays email to: employeedevelopment@valenciacollege.edu;
                 alternatively, you can interoffice hard copies to Employee Development, Mail Code 4-36.</li>
             <li>For assistance or to check your employee development balance email:
                 employeedevelopment@valenciacollege.edu.</li>
             <li>Employees may be required to submit documentation of successful completion of the
                 development experience or class.</li>
-            <li>Employeesshouldmaintain records/institution transcripts, of course,completion for a
+            <li>Employees should maintain records/institution transcripts, of course,completion for a
                 minimum of two years from the start date of the course.</li>
             <li>If you would like to keep a record of this development opportunity, you may add it to your
                 Valencia EDGE transcript. Log into the EDGE and click on the “My Learning” channel.
@@ -296,6 +298,7 @@
             </div>
             <div>
                 <label for="odhrComment">Comment:</label>
+                <br>
                 <textarea id="odhrComment" name="odhrComment" rows="4" cols="100"></textarea>
             </div>
             <div>
@@ -313,7 +316,34 @@
                 </div>
             </div>
         </fieldset>
-
+			
+		<h2>Quick Reference Information For Employee Development Funds</h2>
+		<ul>
+			<li>
+				Employee Development Funds are available to Valencia College employees who have been employed with the
+				college full-time, continuously (with no breaks in service) for at least six months.</li>
+			<li>
+				Employee Development Funds may only be used on conference/seminar/workshop/webinar registration or
+				tuition reimbursement at a U.S. regionally accredited institution.</li>
+			<li>
+				Complete this digital form completely and correctly. Please be legible to prevent delays in processing.</li>
+			<li>
+				This form is for external employee development opportunities only. If attending Valencia College classes,
+				please use the Request for Valencia College Course Tuition form.</li>
+			<li>
+				To avoid delays, email this completed form before the conclusion of your development experience directly
+				to: employeedevelopment@valenciacollege.edu or interoffice mail: Employee Development; MC 4-36.</li>
+			<li>
+				Please note that Employee Development Funds are applied to the fiscal year in which the development
+				opportunity begins.</li>
+			<li>
+				For reimbursement requests, submit your check request form at least 10 business days prior to your
+				“request by date” to allow Accounts Payable time to complete the payment process.</li>
+			<li>
+				To verify existing funds or to determine the eligibility for development opportunities,
+				email: employeedevelopment@valenciacollege.edu.</li>		
+		</ul>
+		
         <h2>Instructions</h2>
         <ul>
             <li>
@@ -421,9 +451,9 @@
 <footer>
     This form is a demo for a new Employee Development Funds application process for Valencia College.
     Created by: Natasha Phyle, Nicolo Perrelli, Adam Hunt, Craig Mackey, Mariele Felipe Pinheiro Rosa, Fernando
-    Jiminez, Alex Visco
+    Jiminez, and Alex Visco
 </footer>
 </body>
 
-
 </html>
+
