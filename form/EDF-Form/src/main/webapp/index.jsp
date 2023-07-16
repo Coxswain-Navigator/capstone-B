@@ -195,6 +195,7 @@
 
         <div>
             <label for="studentPurpose">4. Purpose (Why are you taking this course or attending this conference?)</label>
+            <br>
             <textarea id="studentPurpose" name="studentPurpose" rows="4" cols="100"></textarea>
         </div>
 
@@ -202,6 +203,7 @@
             <label for="studentCollegeBenefit">5. Benefit to the College (How will this course or conference aid you in your job or
                 future
                 professional position?)</label>
+            <br>
             <textarea id="studentCollegeBenefit" name="studentCollegeBenefit" rows="4" cols="100"></textarea>
         </div>
 
@@ -216,7 +218,7 @@
                 <input type="date" id="studentSignDate" name="studentSignDate">
             </div>
         </div>
-
+		<br>
         <fieldset>
             <legend>Supervisor Approval:</legend>
             <p>
@@ -296,6 +298,7 @@
             </div>
             <div>
                 <label for="odhrComment">Comment:</label>
+                <br>
                 <textarea id="odhrComment" name="odhrComment" rows="4" cols="100"></textarea>
             </div>
             <div>
