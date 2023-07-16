@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>EDF Form - Provost</title>
+   <link rel="stylesheet" href="/pdf/css/site.css">
+</head>
+<body>
+   <header>
+      <nav>
+         <a href="http://valenciacollege.edu/">Valencia College</a>
+      </nav>
+   </header>
+   <main>
+      <form>
+         <fieldset>
+            <div>
+               <input type="radio" id="provostApprove" name="yesCheckbox" value="yes">
+               <label for="provostApprove">I approve of this development opportunity.</label>
+               <input type="radio" id="provostDeny" name="noCheckbox" value="no">
+               <label for="provostDeny">I <b>do not</b> approve of this development opportunity.</label>
+            <div>
+               <!-- Next person is in the Pay Roll department -->
+                  <label for="payRollEmail">Email of Pay Roll Department:</label>
+                  <input type="text" id="payRollEmail" name="payRollEmail">
+               </div>
+               <div>
+                  <label for="provostSignature">Provost Signature:</label>
+                  <input type="text" id="provostSignature"name="provostSignature">
+               </div>
+               <div>
+                  <label for="provostSignDate">Date:</label>
+                  <input type="date" id="provostSignDate"name="provostSignDate">
+               </div>
+            </div>
+         </fieldset>
+         <!-- Form will be submitted to payroll department -->
+         <button type="submit">Submit Form</button>
+      </form>
+   </main>
+   <footer>
+      This form is a demo for a new Employee Development Funds application process for Valencia College.
+      Created by: Natasha Phyle, Nicolo Perrelli, Adam Hunt, Craig Mackey, Mariele Felipe Pinheiro Rosa, Fernando
+      Jiminez, Alex Visco
+   </footer>
+</body>
+</html>

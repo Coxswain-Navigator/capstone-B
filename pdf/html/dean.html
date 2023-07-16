@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>EDF Form - Dean</title>
+   <link rel="stylesheet" href="/pdf/css/site.css">
+</head>
+<body>
+   <header>
+      <nav>
+         <a href="http://valenciacollege.edu/">Valencia College</a>
+      </nav>
+   </header>
+   <main>
+      <form>
+         <fieldset>
+            <div>
+               <legend>Dean Approval:</legend>
+               <p>
+                  I,
+      
+                  <label for="supName"></label>
+                  <input type="text" id="supName" name="supName">
+      
+                  (print name) acknowledge that this development
+                  opportunity is approved for the following reasons: (include how the course work orconference will
+                  improve the applicant’s effectiveness and any other reasons for approval).
+               </p>
+               <p>
+                  (This sectionis required.)
+               </p>
+            </div>
+            
+            <div>
+               <label for="approvalReason">Reason for approval</label>
+               <br />
+               <textarea id="approvalReason"name="approvalReason" rows="4" cols="100"></textarea>
+            </div>
+
+            <div>
+               <p>
+                  I also acknowledge that should there be insufficient funds available in the employee’s EDF balance,
+                  my department budget may be billed for the balance due.
+               </p>
+            </div>
+            
+            <div>
+               <!-- Next person is the Provost -->
+               <div>
+                  <label for="provostEmail">Email of Provost:</label>
+                  <input type="text" id="provostEmail" name="provostEmail">
+               </div>
+
+               <div>
+                  <label for="supSignature">Supervisor Signature:</label>
+                  <input type="text" id="supSignature"name="supSignature">
+               </div>
+               <div>
+                  <label for="supSignDate">Date:</label>
+                  <input type="date" id="supSignDate"name="supSignDate">
+               </div>
+            </div>
+         </fieldset>
+
+         <!-- Form will be submitted to Provost -->
+         <button type="submit">Submit Form</button>
+      </form>
+   </main>
+   <footer>
+      This form is a demo for a new Employee Development Funds application process for Valencia College.
+      Created by: Natasha Phyle, Nicolo Perrelli, Adam Hunt, Craig Mackey, Mariele Felipe Pinheiro Rosa, Fernando
+      Jiminez, Alex Visco
+   </footer>
+</body>
+</html>
