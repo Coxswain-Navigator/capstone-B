@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <link rel="stylesheet" href="/pdf/css/site.css">
+</head>
+<body>
+   <header>
+      <nav>
+         <a href="http://valenciacollege.edu/">Valencia College</a>
+      </nav>
+   </header>
+   <main>
+      <form>
+         <fieldset>
+            <legend>
+               ELIGIBILITY VERIFICATION – ODHR USE ONLY
+            </legend>
+            <div>
+               <input type="radio" id="fundsAvailable" name="fundingAvailable" value="yes">
+               <label for="fundsAvailable">Funds available</label>
+               <input type="radio" id="fundsNotAvailable" name="fundingAvailable" value="no">
+               <label for="fundsNotAvailable">Funds not available</label>
+            </div>
+            <p>
+               If employee or development opportunity not eligible, select reason:
+            </p>
+            <div>
+               <input type="radio" id="ineligibleExpense" name="ineligibleExpenseReason" value="ineligibleExpense">
+               <label for="ineligibleExpense">Ineligible expense</label>
+               <input type="radio" id="unaccreditedInstitution" name="ineligibleExpenseReason"
+                  value="unaccreditedInstitution">
+               <label for="unaccreditedInstitution">Unaccredited institution</label>
+               <input type="radio" id="insufficientFunds" name="ineligibleExpenseReason"
+                  value="unaccreditedInstitution">
+               <label for="insufficientFunds">Insufficient EDF Funds</label>
+               <input type="radio" id="other" name="ineligibleExpenseReason" value="other">
+               <label for="other">Other</label>
+            </div>
+            <div>
+               <label for="comment">Comment:</label>
+               <textarea id="comment" name="comment" rows="4" cols="100"></textarea>
+            </div>
+            <div>
+               <div>
+                  <label for="odhrSignature">ODHR Signature:</label>
+                  <input type="text" id="odhrSignature" name="odhrSignature">
+               </div>
+               <div>
+                  <label for="odhrName">Print Name:</label>
+                  <input type="text" id="odhrName" name="odhrName">
+               </div>
+               <div>
+                  <label for="odhrSignDate">Date:</label>
+                  <input type="date" id="odhrSignDate" name="odhrSignDate">
+               </div>
+            </div>
+            <div>
+               <!-- Funding will be approved or denied and the Employee will recieve a confirmation email -->
+               <button>Submit Form</button>
+            </div>
+         </fieldset>
+      </form>
+   </main>
+   <footer>
+      This form is a demo for a new Employee Development Funds application process for Valencia College.
+      Created by: Natasha Phyle, Nicolo Perrelli, Adam Hunt, Craig Mackey, Mariele Felipe Pinheiro Rosa, Fernando
+      Jiminez, Alex Visco
+   </footer>
+</body>
+</html>

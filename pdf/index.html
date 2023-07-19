@@ -16,6 +16,99 @@
    <main>
       <h1>REQUEST FOR EMPLOYEE DEVELOPMENT FUNDS</h1>
 
+      <h2>Instructions</h2>
+         <ul>
+            <li>
+               STEP 1: COMPLETE EMPLOYEE INFORMATION
+               <ul>
+                  <li>Employee’s Name, VID, Department, Position and Start Date of full-time employment.</li>
+               </ul>
+            </li>
+            <li>
+               STEPS 2+3: COMPLETE COURSE INFORMATION OR CONFERENCE INFORMATION
+               <div>
+                  <p>
+                     For Conference Information:
+                  </p>
+                  <p>
+                     Complete all information
+                  </p>
+                  <ul>
+                     <li>
+                        P-card: Check this option if you are using a P-Card for the registration. Proof of payment must
+                        be included with your paperwork.
+                     </li>
+                     <li>
+                        Check Request: Check this option if you are requesting a physical check to pay for the
+                        registration
+                        fees. The check will be issued to the vendor. A completed Check Request form (which can be found
+                        in Atlas under Valencia Forms) must be attached, listing the vendor’s name and vendor VID#. If
+                        you
+                        pay for the registration fee in advance using personal funds, a check request can be submitted
+                        with a payment receipt to be reimbursed for registration expenses.
+                     </li>
+                     <li>
+                        Journal Entry: Check this option if you are attending a conference hosted by Valencia College.
+                     </li>
+                     <li>
+                        Traveler to Pay: Check this option if you are using personal funds to cover the cost of
+                        registration. You must submit a per diem (which can be found in Atlas under Valencia Forms)
+                        after the conference
+                        to be reimbursed. You must provide a receipt.
+                     </li>
+                     <li>
+                        Submit agenda and complete Authorization to Travel form for all conferences.
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               STEPS 4+5: COMPLETE PURPOSE AND BENEFIT TO COLLEGE
+               <ul>
+                  <li>
+                     Purpose - Why are you taking this course or attending this conference?
+                  </li>
+                  <li>
+                     Benefit to College-How will this course or conference aid you in your job or future professional
+                     position?
+                  </li>
+               </ul>
+            </li>
+            <li>
+               STEP 6: EMPLOYEE SIGNATURE AND DATE FORM
+            </li>
+            <li>
+               STEP 7: DIRECT SUPERVISOR PRINTED NAME, LIST REASONS FOR APPROVAL, SIGN AND DATE FORM
+               <ul>
+                  <li>
+                     Supervisor must list how course work or conference will improve the employee’s effectiveness and
+                     any other reason for approval. This section is required.
+                  </li>
+               </ul>
+            </li>
+            <li>
+               STEP 8: SEND THE COMPLETED FORM AND ALL SUPPORTING DOCUMENTS TO YOUR EMPLOYEE DEVELOPMENT.
+            </li>
+         </ul>
+         <ul>
+            <li>This form must be completed and submitted within the fiscal year in which the course/
+               conference/workshop began.</li>
+            <li>To expedite processing and avoid delays email to: employeedevelopment@valenciacollege.edu;
+               alternatively, you can interoffice hard copies to Employee Development, Mail Code 4-36.</li>
+            <li>For assistance or to check your employee development balance email:
+               employeedevelopment@valenciacollege.edu.</li>
+            <li>Employees may be required to submit documentation of successful completion of the
+               development experience or class.</li>
+            <li>Employees should maintain records/institution transcripts, of course, completion for a
+               minimum of two years from the start date of the course.</li>
+            <li>If you would like to keep a record of this development opportunity, you may add it to your
+               Valencia EDGE transcript. Log into the EDGE and click on the “My Learning” channel.
+               Click “Your Transcript.” Then click “options” and select “Add External Training.”
+               Complete the information about your development experience and click submit. Once
+               your course or conference is complete, you can go back and click the “Mark
+               Complete” button on your transcript.</li>
+         </ul>
+
       <form action="" method="POST">
          <fieldset>
             <legend>1. Employee Information</legend>
@@ -36,7 +129,7 @@
                <input type="text" id="position" name="position">
             </div>
             <div>
-               <label for="empStartDate">Start dateof Full-Time Employment:</label>
+               <label for="empStartDate">Start date of Full-Time Employment:</label>
                <input type="date" id="empStartDate" name="empStartDate">
             </div>
             <div>
@@ -44,12 +137,12 @@
                <div>
                   <label for="index">Index:</label>
                   <!-- The following field is something that should be editable by an admin not the applicant -->
-                  <input type="text" id="index" name="index">
+                  <input type="text" id="index" name="index" disabled="disabled" placeholder="Financial Department Only">
                </div>
                <div>
                   <label for="account">Account #:</label>
                   <!-- The following field is something that should be editable by an admin not the applicant -->
-                  <input type="text" id="account" name="account">
+                  <input type="text" id="account" name="account" disabled="disabled" placeholder="Financial Department Only">
                </div>
             </div>
             <p>
@@ -118,7 +211,7 @@
                   <input type="text" id="totalCost" name="totalCost">
                </div>
                <div>
-                  <label for="totalRequested">Employee Development FundsRequested:</label>
+                  <label for="totalRequested">Employee Development Funds Requested:</label>
                   <input type="text" id="totalRequested" name="totalRequested">
                </div>
             </div>
@@ -210,6 +303,12 @@
             <textarea id="benefit" name="benefit" rows="4" cols="100"></textarea>
          </div>
 
+         <!-- Email address of the supervisor which will send a completed form to the supervisor to view for the next steps -->
+         <div>
+            <label for="supEmail">Email of supervisor:</label>
+            <input type="text" id="supEmail" name="supEmail">
+         </div>
+
          <div>
             <div>
                <label for="empSignature">Employee Signature:</label>
@@ -221,179 +320,10 @@
                <input type="date" id="empSignDate" name="empSignDate">
             </div>
          </div>
-
-         <fieldset>
-            <legend>Supervisor Approval:</legend>
-            <p>
-               I,
-
-               <label for="supName"></label>
-               <input type="text" id="supName" name="supName">
-
-               (print name) acknowledge that this development
-               opportunity is approved for the following reasons: (include how the course work or conference will
-               improve the applicant’s effectiveness and any other reasons for approval).
-            </p>
-            <p>
-               (This sectionis required.)
-            </p>
-            <div>
-               <label for="approvalReason"></label>
-               <textarea id="approvalReason" name="approvalReason" rows="4" cols="100"></textarea>
-            </div>
-            <p>
-               I also acknowledge that should there be insufficient funds available in the employee’s EDF balance,
-               my department budget may be billed for the balance due.
-            </p>
-            <div>
-               <div>
-                  <label for="supSignature">Supervisor Signature:</label>
-                  <input type="text" id="supSignature" name="supSignature">
-               </div>
-               <div>
-                  <label for="supSignDate">Date:</label>
-                  <input type="date" id="supSignDate" name="supSignDate">
-               </div>
-            </div>
-         </fieldset>
-
-         <ul>
-            <li>This form must be completed and submitted within the fiscal year in which the course/
-               conference/workshop began.</li>
-            <li>To expedite processing and avoid delays email to: employeedevelopment@valenciacollege.edu;
-               alternatively, you can interoffice hard copies to Employee Development, Mail Code 4-36.</li>
-            <li>For assistance or to check your employee development balance email:
-               employeedevelopment@valenciacollege.edu.</li>
-            <li>Employees may be required to submit documentation of successful completion of the
-               development experience or class.</li>
-            <li>Employeesshouldmaintain records/institution transcripts, of course,completion for a
-               minimum of two years from the start date of the course.</li>
-            <li>If you would like to keep a record of this development opportunity, you may add it to your
-               Valencia EDGE transcript. Log into the EDGE and click on the “My Learning” channel.
-               Click “Your Transcript.” Then click “options” and select “Add External Training.”
-               Complete the information about your development experience and click submit. Once
-               your course or conference is complete, you can go back and click the “Mark
-               Complete” button on your transcript.</li>
-         </ul>
-
-         <fieldset>
-            <legend>
-               ELIGIBILITY VERIFICATION – ODHR USE ONLY
-            </legend>
-            <div>
-               <input type="radio" id="fundsAvailable" name="fundingAvailable" value="yes">
-               <label for="fundsAvailable">Funds available</label>
-               <input type="radio" id="fundsNotAvailable" name="fundingAvailable" value="no">
-               <label for="fundsNotAvailable">Funds not available</label>
-            </div>
-            <p>
-               If employee or development opportunity not eligible, select reason:
-            </p>
-            <div>
-               <input type="radio" id="ineligibleExpense" name="ineligibleExpenseReason" value="ineligibleExpense">
-               <label for="ineligibleExpense">Ineligible expense</label>
-               <input type="radio" id="unaccreditedInstitution" name="ineligibleExpenseReason"
-                  value="unaccreditedInstitution">
-               <label for="unaccreditedInstitution">Unaccredited institution</label>
-               <input type="radio" id="insufficientFunds" name="ineligibleExpenseReason"
-                  value="unaccreditedInstitution">
-               <label for="insufficientFunds">Insufficient EDF Funds</label>
-               <input type="radio" id="other" name="ineligibleExpenseReason" value="other">
-               <label for="other">Other</label>
-            </div>
-            <div>
-               <label for="comment">Comment:</label>
-               <textarea id="comment" name="comment" rows="4" cols="100"></textarea>
-            </div>
-            <div>
-               <div>
-                  <label for="odhrSignature">ODHR Signature:</label>
-                  <input type="text" id="odhrSignature" name="odhrSignature">
-               </div>
-               <div>
-                  <label for="odhrName">Print Name:</label>
-                  <input type="text" id="odhrName" name="odhrName">
-               </div>
-               <div>
-                  <label for="odhrSignDate">Date:</label>
-                  <input type="date" id="odhrSignDate" name="odhrSignDate">
-               </div>
-            </div>
-         </fieldset>
-
-         <h2>Instructions</h2>
-         <ul>
-            <li>
-               STEP 1: COMPLETE EMPLOYEE INFORMATION
-               <ul>
-                  <li>Employee’s Name, VID, Department, Position and Start Date of full-time employment.</li>
-               </ul>
-            </li>
-            <li>
-               STEPS 2+3: COMPLETE COURSE INFORMATION OR CONFERENCE INFORMATION
-               <div>
-                  <p>
-                     For Conference Information:
-                  </p>
-                  <p>
-                     Complete all information
-                  </p>
-                  <ul>
-                     <li>
-                        P-card: Check this option if you are using a P-Card for the registration. Proof of payment must
-                        be included with your paperwork.
-                     </li>
-                     <li>
-                        Check Request: Check this option if you are requesting a physical check to pay for the
-                        registration
-                        fees. The check will be issued to the vendor.A completed Check Request form (which can be found
-                        in Atlas under Valencia Forms)must be attached, listing the vendor’s name and vendor VID#.If you
-                        pay for the registration fee in advance using personal funds, a check request can be submitted
-                        with a payment receipt to be reimbursed for registration expenses.
-                     </li>
-                     <li>
-                        Journal Entry: Check this option if you are attending a conference hosted by Valencia College.
-                     </li>
-                     <li>
-                        Traveler to Pay: Check this option if you are using personal funds to cover the cost of
-                        registration. You must submit a per diem (which can be found in Atlas under Valencia Forms)
-                        after the conference
-                        to be reimbursed. You must provide a receipt.
-                     </li>
-                     <li>
-                        Submit agenda and complete Authorization toTravel form forall conferences.
-                     </li>
-                  </ul>
-               </div>
-            </li>
-            <li>
-               STEPS 4+5: COMPLETE PURPOSE AND BENEFIT TO COLLEGE
-               <ul>
-                  <li>
-                     Purpose - Why are you taking this course or attending this conference?
-                  </li>
-                  <li>
-                     Benefitto College-How will this course or conference aid you in your job or future professional
-                     position?
-                  </li>
-               </ul>
-            </li>
-            <li>
-               STEP 6: EMPLOYEE SIGNATURE AND DATE FORM
-            </li>
-            <li>
-               STEP 7: DIRECT SUPERVISOR PRINTED NAME, LIST REASONS FOR APPROVAL, SIGN AND DATE FORM
-               <ul>
-                  <li>
-                     Supervisor must list how course work or conference will improve the employee’s effectiveness and
-                     any other reason for approval. This section is required.
-                  </li>
-               </ul>
-            </li>
-            <li>
-               STEP 8: SEND THE COMPLETED FORM AND ALL SUPPORTING DOCUMENTS TO YOUR EMPLOYEE DEVELOPMENT.
-            </li>
-         </ul>
+         
+         <div>
+            <button type="submit">Submit Form</button>
+         </div>
 
          <h2>Additional Resources</h2>
          <ul>
@@ -419,9 +349,7 @@
                </ul>
             </li>
          </ul>
-         <div>
-            <button type="submit">Submit Form</button>
-         </div>
+         
       </form>
 
    </main>
