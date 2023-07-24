@@ -23,7 +23,7 @@
 <main>
   <h1>REQUEST FOR EMPLOYEE DEVELOPMENT FUNDS</h1>
 
-  <h1 style="color: green" th:if="${currentRole} == 'APPROVED'">Congratulations, your application was approved.</h1>
+  <h1 style="color: green" th:if="${currentRole} == 'APPROVED'">Congratulations, your application has been submitted.</h1>
 
 
   <form action="#" th:action="@{/submit}" th:object="${application}" method="post">
